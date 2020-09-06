@@ -1,6 +1,8 @@
 package animales;
 
-public class Tortuga extends Animal{
+import Interfaz.INadable;
+
+public class Tortuga extends Animal implements INadable {
 
 
     public Tortuga(String nombre, String claseAnimal, boolean capacidadNadar) {
@@ -10,5 +12,10 @@ public class Tortuga extends Animal{
     @Override
     public String show() {
         return "Me lamo "+this.getNombre() + " y soy un " +this.getClaseAnimal();
+    }
+
+    @Override
+    public String showNadador() {
+        return this.getNombre()+" de la especie "+this.getClaseAnimal() + " puede entrar al acuario porque sabe nada";
     }
 }
