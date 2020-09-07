@@ -15,6 +15,6 @@ public class Delfin extends Animal implements INadable {
 
     @Override
     public String showNadador() {
-        return this.getNombre()+" de la especie "+this.getClaseAnimal() + " puede entrar al acuario porque sabe nada";
+        return this.getNombre()+" de la especie "+this.getClaseAnimal() + " puede entrar al acuario porque sabe nadar";
     }
 }
